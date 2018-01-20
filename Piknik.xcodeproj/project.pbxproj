@@ -16,6 +16,7 @@
 		0A6541AC20125CA700F62A1A /* PiknikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6541AB20125CA700F62A1A /* PiknikUITests.swift */; };
 		0A6541BD2012C82F00F62A1A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6541BC2012C82F00F62A1A /* Core.framework */; };
 		0A6541BF2012D1A600F62A1A /* Piknik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6541BE2012D1A600F62A1A /* Piknik.swift */; };
+		0A6541C82013C76500F62A1A /* SwiftSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6541C72013C76500F62A1A /* SwiftSocket.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		0A6541AD20125CA700F62A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6541BC2012C82F00F62A1A /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Core.framework; sourceTree = "<group>"; };
 		0A6541BE2012D1A600F62A1A /* Piknik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piknik.swift; sourceTree = "<group>"; };
+		0A6541C72013C76500F62A1A /* SwiftSocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSocket.framework; path = Carthage/Build/iOS/SwiftSocket.framework; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A6541BD2012C82F00F62A1A /* Core.framework in Frameworks */,
+				0A6541C82013C76500F62A1A /* SwiftSocket.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +138,7 @@
 		0A6541B920125D3000F62A1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A6541C72013C76500F62A1A /* SwiftSocket.framework */,
 				0A6541BC2012C82F00F62A1A /* Core.framework */,
 			);
 			path = Frameworks;
@@ -150,6 +154,7 @@
 				0A65418420125CA700F62A1A /* Sources */,
 				0A65418520125CA700F62A1A /* Frameworks */,
 				0A65418620125CA700F62A1A /* Resources */,
+				0A6541C22013C59000F62A1A /* Carthage copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -268,6 +273,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A6541C22013C59000F62A1A /* Carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftSocket.framework",
+			);
+			name = "Carthage copy-frameworks";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SwiftSocket.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0A65418420125CA700F62A1A /* Sources */ = {
@@ -448,6 +472,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Piknik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -468,6 +493,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				INFOPLIST_FILE = Piknik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

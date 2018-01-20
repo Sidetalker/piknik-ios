@@ -152,7 +152,7 @@ FOUNDATION_EXPORT NSString* const CoreVersion;
 /**
  * RunClient - Process a client query
  */
-FOUNDATION_EXPORT void CoreCopy(void);
+FOUNDATION_EXPORT void CoreCopy(NSString* input);
 
 FOUNDATION_EXPORT void CoreInitialize(void);
 
