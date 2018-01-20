@@ -156,8 +156,10 @@ FOUNDATION_EXPORT BOOL CoreIsTerminal(long fd);
 
 FOUNDATION_EXPORT void CoreRun(void);
 
-// skipped function RunClient with unsupported parameter or return types
-
+/**
+ * RunClient - Process a client query
+ */
+FOUNDATION_EXPORT void CoreRunClient(void);
 
 // skipped function RunServer with unsupported parameter or return types
 

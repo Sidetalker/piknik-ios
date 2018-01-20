@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        CoreRun() // This does nothing
+        CoreRunClient() // This might do something
     }
 
     override func didReceiveMemoryWarning() {
