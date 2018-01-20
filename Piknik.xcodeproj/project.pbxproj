@@ -15,6 +15,7 @@
 		0A6541A120125CA700F62A1A /* PiknikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6541A020125CA700F62A1A /* PiknikTests.swift */; };
 		0A6541AC20125CA700F62A1A /* PiknikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6541AB20125CA700F62A1A /* PiknikUITests.swift */; };
 		0A6541BD2012C82F00F62A1A /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A6541BC2012C82F00F62A1A /* Core.framework */; };
+		0A6541BF2012D1A600F62A1A /* Piknik.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A6541BE2012D1A600F62A1A /* Piknik.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		0A6541AB20125CA700F62A1A /* PiknikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiknikUITests.swift; sourceTree = "<group>"; };
 		0A6541AD20125CA700F62A1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A6541BC2012C82F00F62A1A /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Core.framework; sourceTree = "<group>"; };
+		0A6541BE2012D1A600F62A1A /* Piknik.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Piknik.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				0A65419220125CA700F62A1A /* Assets.xcassets */,
 				0A65419420125CA700F62A1A /* LaunchScreen.storyboard */,
 				0A65419720125CA700F62A1A /* Info.plist */,
+				0A6541BE2012D1A600F62A1A /* Piknik.swift */,
 			);
 			path = Piknik;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A65418E20125CA700F62A1A /* ViewController.swift in Sources */,
+				0A6541BF2012D1A600F62A1A /* Piknik.swift in Sources */,
 				0A65418C20125CA700F62A1A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,6 +444,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7BT87895F;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -459,6 +464,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S7BT87895F;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",

@@ -150,16 +150,20 @@ FOUNDATION_EXPORT NSString* const CoreDomainStr;
 FOUNDATION_EXPORT NSString* const CoreVersion;
 
 /**
+ * RunClient - Process a client query
+ */
+FOUNDATION_EXPORT void CoreCopy(void);
+
+FOUNDATION_EXPORT void CoreInitialize(void);
+
+/**
  * IsTerminal - returns true if the file descriptor is attached to a terminal
  */
 FOUNDATION_EXPORT BOOL CoreIsTerminal(long fd);
 
-FOUNDATION_EXPORT void CoreRun(void);
+FOUNDATION_EXPORT NSString* CorePaste(void);
 
-/**
- * RunClient - Process a client query
- */
-FOUNDATION_EXPORT void CoreRunClient(void);
+FOUNDATION_EXPORT void CoreRun(void);
 
 // skipped function RunServer with unsupported parameter or return types
 
