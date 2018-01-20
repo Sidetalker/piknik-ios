@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import Core
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        CoreRun() // This does nothing
     }
 
     override func didReceiveMemoryWarning() {
